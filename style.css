@@ -1,0 +1,181 @@
+*
+{
+    margin:0;
+    padding: 0;
+    background-color: rgb(28, 25, 25);
+    position: relative;
+}
+
+h1
+{
+    color: antiquewhite;
+    text-transform: uppercase;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 60px;
+    cursor: pointer;
+}
+span
+{
+    color: rgb(253, 44, 44);
+}
+nav
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+nav ul li a
+{
+    text-decoration: none;
+    color: white;
+    text-transform: capitalize;
+    font-size: 18px;
+    padding: 10px 40px;
+    transition: .5s;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+nav ul li a.one 
+{
+    border-right: 1px solid rgb(253, 44, 44);
+}
+nav ul li a.one:hover,nav ul li a.two:hover
+{
+    /*background-color: white;*/
+    color: rgb(253, 44, 44) ;
+}
+nav ul li 
+{
+    list-style-type: none;
+    display: inline-block;
+}
+a.login
+{
+    text-decoration: none;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    background-color:rgb(253, 44, 44) ;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    transition: transform .4s;
+
+}
+a.login:hover
+{
+    transform: scale(1.2);
+    box-shadow: 0px 0px 5px #000,0px 0px 15px #858585;
+}
+
+.extra
+{
+    color: aliceblue;
+    text-align: center;
+    text-transform: capitalize;
+}
+span .line 
+{
+    border-bottom: 3px solid rgb(253, 44, 44);
+}
+
+/*
+.content
+{
+    color: aliceblue;
+    display: flex;
+}
+.con1,.con2
+{
+    border-right: 3px solid rgb(253, 44, 44);
+}
+.con1
+{
+    padding: 10px;
+    width: 250%;
+}
+.con2
+{
+    padding: 10px;
+    width: 600%;
+    height: 75vh;
+}
+.con3
+{
+    padding: 10px;
+}
+*/
+.content
+{
+    transform: translateY(100%);
+    text-align: center;
+}
+.content h1
+{
+    font-size: 100px;
+    padding: 30px;
+    font-weight: bold;
+}
+.yellow a
+{
+    color: yellow;
+    text-shadow: 0px 0px 5px #000,0px 0px 15px #858585;
+    transition: transform .4s;
+    text-decoration: none;
+}
+.yellow a:hover
+{
+    transform: scale(1.2);
+}
+.blue a
+{
+    color: blue;
+    text-shadow: 0px 0px 5px #000,0px 0px 15px #858585;
+    transition: transform .4s;
+    text-decoration: none;
+}
+.content h2
+{
+    color: aliceblue;
+    text-transform: uppercase;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+.content h4
+{
+    color: antiquewhite;
+    text-transform: capitalize;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+@media screen and (max-width:1000px) {
+    body 
+    {
+        height: 90vh;
+    }
+    nav
+    {
+        display: block;
+    }
+    h1 
+    {
+        text-align: center;
+        letter-spacing: 2px;
+        margin: 30px;
+    }
+    nav ul li   
+    {
+        display: block;
+        margin: 35px;
+        text-align: center;
+    }
+    nav ul li a.one
+    {
+        border: none;
+    }
+    .extra
+    {
+        margin: 35px 0px;
+        text-align: center;
+    }
+}
